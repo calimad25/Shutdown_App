@@ -19,6 +19,7 @@ class Shutdown:
         self.root =tk.Tk()
         self.root.geometry("300x300")
         self.root.title("Shutdown App")
+        self.root.iconbitmap("shutdown_icon.ico")
 
         # Buttons with various predifined ammount of time
         self.button1 = tk.Button(self.root, text="30 min", command=lambda: shutdown(1800))
